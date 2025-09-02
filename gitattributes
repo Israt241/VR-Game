@@ -1,0 +1,50 @@
+# ---------------------------------------------------------
+# Unreal Engine - Git LFS Configuration
+# ---------------------------------------------------------
+# Use LFS for all binary assets
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap   filter=lfs diff=lfs merge=lfs -text
+
+# Models (commonly imported into Unreal)
+*.fbx    filter=lfs diff=lfs merge=lfs -text
+*.obj    filter=lfs diff=lfs merge=lfs -text
+*.blend  filter=lfs diff=lfs merge=lfs -text
+*.gltf   filter=lfs diff=lfs merge=lfs -text
+*.glb    filter=lfs diff=lfs merge=lfs -text
+
+# Textures & materials
+*.png    filter=lfs diff=lfs merge=lfs -text
+*.jpg    filter=lfs diff=lfs merge=lfs -text
+*.jpeg   filter=lfs diff=lfs merge=lfs -text
+*.tga    filter=lfs diff=lfs merge=lfs -text
+*.tiff   filter=lfs diff=lfs merge=lfs -text
+*.bmp    filter=lfs diff=lfs merge=lfs -text
+*.exr    filter=lfs diff=lfs merge=lfs -text
+*.psd    filter=lfs diff=lfs merge=lfs -text
+
+# Audio
+*.wav    filter=lfs diff=lfs merge=lfs -text
+*.mp3    filter=lfs diff=lfs merge=lfs -text
+*.ogg    filter=lfs diff=lfs merge=lfs -text
+*.flac   filter=lfs diff=lfs merge=lfs -text
+
+# Video / cinematics
+*.mp4    filter=lfs diff=lfs merge=lfs -text
+*.mov    filter=lfs diff=lfs merge=lfs -text
+*.avi    filter=lfs diff=lfs merge=lfs -text
+
+# ---------------------------------------------------------
+# Keep text-based files in normal Git (readable diffs)
+# ---------------------------------------------------------
+*.ini      text
+*.config   text
+*.cpp      text
+*.h        text
+*.cs       text
+*.uproject text
+*.uplugin  text
+*.json     text
+*.xml      text
+*.txt      text
+*.md       text
+*.shader   text
